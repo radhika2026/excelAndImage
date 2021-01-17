@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOWNLOAD</title>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
+  <style media="screen">
+    body {
+      background-color: #cae4db
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 class="text-center">EXCEL AND IMAGES</h1>
+  <br>
+ <!--  SINGLE FILE -->
+<form action="/uploadfile" id = "post" enctype="multipart/form-data" method="POST"  class="text-center">
+  <h2> Select the excel sheet</h2>
+  <h3> Make sure it contains "name" column in it</h3>
+  <div class="form-group">
+   <input type="file" name="myFile" required class="form-control"/>
+   <button class="btn btn-danger btn-lg">
+       Upload excel File
+   </button>
+   <br>
+   <br>
+   <!-- <input type="submit" value="Upload a file"/> -->
+  </div>
+</form>
+
+
+<!-- MULTIPLE FILES -->
+
+<!-- <form action="/uploadmultiple"  enctype="multipart/form-data" method="POST" class="text-center">
+  <h2>Select the image</h2>
+  <input type="file" name="myFiles" required class="form-control" multiple>
+  <button class="btn btn-danger btn-lg">
+      Upload image
+  </button>
+</form> -->
+
+
+<!-- <form action="/download" method="POST" enctype="multipart/form-data"  class="text-center">
+  <br>
+  <button class="btn btn-danger btn-lg">
+      Download images
+  </button>
+</form> -->
+
+
+
+</body>
+</html>
